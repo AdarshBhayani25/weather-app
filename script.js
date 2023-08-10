@@ -25,21 +25,26 @@ async function checkWeather(city) {
         weatherIcon.src = "images/clouds.png";
         document.querySelector(".card").style.background = "url(images/cloudsky.jpg)";
     }
+    if (data.weather[0].main == "Snow") {
+        weatherIcon.src = "images/clouds.png";
+        document.querySelector(".card").style.background = "url(images/snowsky.jpg)";
+        document.querySelector(".card").style.color = "black";
+    }
     else if (data.weather[0].main == "Clear") {
         weatherIcon.src = "images/clear.png";
-        // document.querySelector(".card").style.background = "url(images/clearsky.png)";
+        document.querySelector(".card").style.background = "url(images/clearsky.png)";
     }
     else if (data.weather[0].main == "Rain") {
         weatherIcon.src = "images/rain.png";
-        //  document.querySelector(".card").style.background = "url(images/rainsky.jpg)";
+       document.querySelector(".card").style.background = "url(images/rainsky.jpg)";
     }
     else if (data.weather[0].main == "Mist") {
         weatherIcon.src = "images/Mist.png"
-        // document.querySelector(".card").style.background = "url(images/mistsky.jpg)";
+         document.querySelector(".card").style.background = "url(images/mistsky.jpg)";
     }
     else if (data.weather[0].main == "Drizzel") {
         weatherIcon.src = "images/drizzle.png"
-        // document.querySelector(".card").style.background = "url(images/drizzlesky.jpg)";
+         document.querySelector(".card").style.background = "url(images/drizzlesky.jpg)";
     }
 
     document.querySelector(".weather").style.display = "contents";
