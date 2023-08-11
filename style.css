@@ -25,6 +25,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .search input{
@@ -48,11 +49,9 @@ body{
     width: 60px;
     height: 60px;
     cursor: pointer;
+    font-size: 20px;
 }
 
-.search button img{
-    width : 30px;
-}
 
 .weather-icon{
     width: 170px;
